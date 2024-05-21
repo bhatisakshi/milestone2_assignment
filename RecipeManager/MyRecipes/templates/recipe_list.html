@@ -1,0 +1,13 @@
+{%extends "base.html" %}
+{% block start %}
+<h1>All Recipes</h1>
+    <ul>
+        {% if recipes%}
+            {% for recipe in recipes %}
+                <li>
+                    {{ recipe.name }} - 
+                    <a href="{% url 'recipe-detail' recipe.recipe_id %}">Edit</a>
+                </li>
+            {% endfor %}
+    </ul>
+{% endblock %}

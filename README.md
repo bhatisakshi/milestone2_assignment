@@ -161,9 +161,3 @@ MyRecipes is a Django-based API for managing recipes, ingredients, and categorie
 ## Admin Interface
 
 To access the Django admin interface, go to `/admin/` and log in with the superuser credentials created during the installation process.
-
-## Running Tests
-
-To run tests for the application:
-```sh
-python manage.py test
